@@ -5,12 +5,14 @@ var db      = low(adapter);
 
 // init the data store
 // ---------------------------
-// YOUR CODE
+// set some defaults 
+db.defaults({ posts: [] }).write();
 
-// add post
-// ----------------------------
-// YOUR CODE
-
+// Add a Post 
+console.log(
+db.get('posts').value()
+);
+    
 // count posts
 // ----------------------------
 // YOUR CODE
